@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Space Mono";
+  src: url("/static/fonts/SpaceMono-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@theme {
+  --color-background: #292929; /* dark gray */
+  --color-text: #fecea8; /* peach blossom */
+  --color-secondaryText: #99b898; /* soft green */
+  --color-cottonCandyPink: #ffbcd9;
+  --color-darkGray: #616161;
+  --font-mono: "Space Mono";
+}
