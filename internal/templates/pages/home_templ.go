@@ -11,7 +11,7 @@ import templruntime "github.com/a-h/templ/runtime"
 import "digital-garden/internal/templates/layouts"
 import "digital-garden/internal/templates/components"
 
-func Home(theme string) templ.Component {
+func Home() templ.Component {
 	return templruntime.GeneratedTemplate(func(templ_7745c5c3_Input templruntime.GeneratedComponentInput) (templ_7745c5c3_Err error) {
 		templ_7745c5c3_W, ctx := templ_7745c5c3_Input.Writer, templ_7745c5c3_Input.Context
 		if templ_7745c5c3_CtxErr := ctx.Err(); templ_7745c5c3_CtxErr != nil {
@@ -44,7 +44,7 @@ func Home(theme string) templ.Component {
 				}()
 			}
 			ctx = templ.InitializeContext(ctx)
-			templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 1, "<section id=\"intro\" class=\"mb-20\"><div class=\"space-y-6\"><div class=\"space-y-4\"><h2 class=\"text-lg font-bold text-cottonCandyPink\">tl;dr</h2><p class=\"text-lg leading-relaxed\">Full Stack Developer at TouchBistro working on developer tooling and automation.  Former pedicab driver who discovered programming during the pandemic and fell in love with building things.</p></div></div></section><section id=\"journey\" class=\"mb-20\"><div class=\"space-y-12\"><div><h2 class=\"text-2xl font-bold mb-8\">The Journey</h2><div class=\"space-y-4 text-secondaryText\"><p>Started as a pedicab driver in Toronto, biking people around the city and discovering  stories from all walks of life. When I wanted to start my own pedicab company,  I needed a website but couldn't afford to hire someone.</p><p>Black Friday 2019: bought a web development course on Udemy. Little did I know this  would completely change my career trajectory.</p><p>The pandemic hit in March 2020. While the world paused, I dove deeper into programming.  Completed CS50, built projects, struggled through algorithms, and fell in love with  the craft of building software.</p><p>May 2021: landed my first developer role at TouchBistro. Got plopped onto the Menu Management team building a Cloud-first menu that interacts with in-venue POS systems 🥳.</p></div></div><div class=\"border-l-2 border-cottonCandyPink pl-6\"><h3 class=\"text-lg font-bold mb-2\">Currently</h3><p class=\"text-secondaryText\">At Touchbistro building CI/CD pipelines, developer tools, and automation.  Passionate about developer experience and making complex systems simple.</p></div></div></section><section id=\"projects\" class=\"mb-20\"><h2 class=\"text-2xl font-bold mb-8\">Hobby Projects 🫶🏻</h2><div class=\"grid gap-8\">")
+			templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 1, "<section id=\"intro\" class=\"mb-20\"><div class=\"space-y-6\"><div class=\"space-y-4\"><h2 class=\"text-lg font-bold text-cottonCandyPink\">tl;dr</h2><p class=\"text-lg leading-relaxed\">Full Stack Developer at TouchBistro enabling devs to ship faster, safer, and easier.  Former pedicab (aka bike taxi) driver who discovered programming during the pandemic and fell in love with building things.  Life-long autodidact, grappling enthusiast and Steam library dust collector.</p></div></div></section><section id=\"journey\" class=\"mb-20\"><div class=\"space-y-12\"><div><h2 class=\"text-2xl font-bold mb-8\">The Journey</h2><div class=\"space-y-4 text-secondaryText\"><p>Started as a pedicab driver in Toronto, biking people around the city and discovering  stories from all walks of life. When I wanted to start my own pedicab company,  I needed a website but couldn't afford to hire someone.</p><p>Black Friday 2019: bought a web development course on Udemy. Little did I know this  would completely change my career trajectory.</p><p>The pandemic hit in March 2020. While the world paused, I dove deeper into programming.  Completed CS50, built projects, struggled through algorithms, and fell in love with  the craft of building software.</p><p>May 2021: landed my first developer role at TouchBistro. Got plopped onto the Menu Management team building a Cloud-first menu that interacts with in-venue POS systems 🥳.</p></div></div><div class=\"border-l-2 border-cottonCandyPink pl-6\"><h3 class=\"text-lg font-bold mb-2\">Currently</h3><p class=\"text-secondaryText\">On the Developer Acceleration team @TouchBistro building CI/CD pipelines, developer tools, and automation.  Passionate about learning all the corners and edges of software and learning about real-world systems.</p></div></div></section><section id=\"projects\" class=\"mb-20\"><h2 class=\"text-2xl font-bold mb-8\">Hobby Projects 🫶🏻</h2><div class=\"grid gap-8\">")
 			if templ_7745c5c3_Err != nil {
 				return templ_7745c5c3_Err
 			}
@@ -87,9 +87,9 @@ func Home(theme string) templ.Component {
 			}
 			templ_7745c5c3_Err = components.OpenSourceCard(components.OpenSourceContribution{
 				Title:           "FastHTML",
-				Description:     "A new next-generation Python web framework for fast, scalable web applications with minimal, compact code",
+				Description:     "A Python web framework for fast, scalable web applications with minimal, compact code. ",
 				PullRequestLink: "https://github.com/AnswerDotAI/fasthtml/pulls?q=is%3Apr+author%3AkhoaHyh+",
-				Tags:            []string{"Python", "Web Framework"},
+				Tags:            []string{"Python", "ASGI", "HTMX", "Web Framework"},
 			}).Render(ctx, templ_7745c5c3_Buffer)
 			if templ_7745c5c3_Err != nil {
 				return templ_7745c5c3_Err
@@ -98,7 +98,7 @@ func Home(theme string) templ.Component {
 				Title:           "LaunchDarkly/ld-find-code-refs",
 				Description:     "Command line program for generating flag code references",
 				PullRequestLink: "https://github.com/launchdarkly/ld-find-code-refs/pulls?q=is%3Apr+is%3Aclosed+author%3AkhoaHyh",
-				Tags:            []string{"Go", "Feature Flags", "CLI"},
+				Tags:            []string{"Go", "Feature Flags", "Code Scanning", "CLI"},
 			}).Render(ctx, templ_7745c5c3_Buffer)
 			if templ_7745c5c3_Err != nil {
 				return templ_7745c5c3_Err
@@ -109,7 +109,7 @@ func Home(theme string) templ.Component {
 			}
 			return nil
 		})
-		templ_7745c5c3_Err = layouts.Base("Khoa Huynh", theme).Render(templ.WithChildren(ctx, templ_7745c5c3_Var2), templ_7745c5c3_Buffer)
+		templ_7745c5c3_Err = layouts.Base("Khoa Huynh").Render(templ.WithChildren(ctx, templ_7745c5c3_Var2), templ_7745c5c3_Buffer)
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}

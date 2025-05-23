@@ -3,15 +3,16 @@ package pages
 import "digital-garden/internal/templates/layouts"
 import "digital-garden/internal/templates/components"
 
-templ Home(theme string) {
-	@layouts.Base("Khoa Huynh", theme) {
+templ Home() {
+	@layouts.Base("Khoa Huynh") {
 		<section id="intro" class="mb-20">
 			<div class="space-y-6">
 				<div class="space-y-4">
 					<h2 class="text-lg font-bold text-cottonCandyPink">tl;dr</h2>
 					<p class="text-lg leading-relaxed">
-						Full Stack Developer at TouchBistro working on developer tooling and automation. 
-						Former pedicab driver who discovered programming during the pandemic and fell in love with building things.
+						Full Stack Developer at TouchBistro enabling devs to ship faster, safer, and easier. 
+						Former pedicab (aka bike taxi) driver who discovered programming during the pandemic and fell in love with building things. 
+						Life-long autodidact, grappling enthusiast and Steam library dust collector.
 					</p>
 				</div>
 			</div>
@@ -44,8 +45,8 @@ templ Home(theme string) {
 				<div class="border-l-2 border-cottonCandyPink pl-6">
 					<h3 class="text-lg font-bold mb-2">Currently</h3>
 					<p class="text-secondaryText">
-						At Touchbistro building CI/CD pipelines, developer tools, and automation. 
-						Passionate about developer experience and making complex systems simple.
+						On the Developer Acceleration team @TouchBistro building CI/CD pipelines, developer tools, and automation. 
+						Passionate about learning all the corners and edges of software and learning about real-world systems.
 					</p>
 				</div>
 			</div>
@@ -81,15 +82,15 @@ templ Home(theme string) {
 				})
 				@components.OpenSourceCard(components.OpenSourceContribution{
 					Title:           "FastHTML",
-					Description:     "A new next-generation Python web framework for fast, scalable web applications with minimal, compact code",
+					Description:     "A Python web framework for fast, scalable web applications with minimal, compact code. ",
 					PullRequestLink: "https://github.com/AnswerDotAI/fasthtml/pulls?q=is%3Apr+author%3AkhoaHyh+",
-					Tags:            []string{"Python", "Web Framework"},
+					Tags:            []string{"Python", "ASGI", "HTMX", "Web Framework"},
 				})
 				@components.OpenSourceCard(components.OpenSourceContribution{
 					Title:           "LaunchDarkly/ld-find-code-refs",
 					Description:     "Command line program for generating flag code references",
 					PullRequestLink: "https://github.com/launchdarkly/ld-find-code-refs/pulls?q=is%3Apr+is%3Aclosed+author%3AkhoaHyh",
-					Tags:            []string{"Go", "Feature Flags", "CLI"},
+					Tags:            []string{"Go", "Feature Flags", "Code Scanning", "CLI"},
 				})
 			</div>
 		</section>

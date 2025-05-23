@@ -17,7 +17,6 @@ func main() {
 	mux.Handle("/static/", http.StripPrefix("/static", fileServer))
 
 	mux.HandleFunc("/", handlers.Home)
-	mux.HandleFunc("/toggle-theme", handlers.ToggleTheme)
 
 	// TODO: make env var
 	port := ":3000"
