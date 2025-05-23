@@ -4,4 +4,12 @@ Can't stop re-creating my personal website 🙃
 
 ## Why 🤷🏻‍♂️
 
-Getting tired of catering personal website to show off only programming and career stuff. I think vintage internet is making a comeback and I'd like to be apart of the renaissance/revival. As such, I'm also straying away from SPAs and JS frameworks for this one and going with a new stack: Go, Templ, HTMX. Basically serving markup from the server. Super interested in Hypermedia, HATEOAS, and [mcmaster](https://www.mcmaster.com/).
+Getting tired of catering personal website to show off only programming and career stuff. Straying away from SPAs and JS frameworks for this one and trying out Go, Templ, and HTMX. Basically serving markup from the server. Creating a digital garden while learning about Hypermedia and HATEOAS.
+
+## TODOs
+
+[] add more to readme
+[] make entire open source contribution component clickable
+[] add github links for projects
+[] make dotted line for project card hover a different colour (currently black)
+[] add technology tags to project cards (maybe)
