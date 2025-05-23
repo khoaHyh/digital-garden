@@ -6,7 +6,6 @@ import (
 	"net/http"
 )
 
-// Home handles the homepage
 func Home(w http.ResponseWriter, r *http.Request) {
 	if r.URL.Path != "/" {
 		http.NotFound(w, r)
