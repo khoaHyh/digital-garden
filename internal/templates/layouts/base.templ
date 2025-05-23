@@ -2,13 +2,16 @@ package layouts
 
 import "digital-garden/internal/templates/components"
 
-templ Base(title string) {
+templ Base(title string, theme string) {
 	<!DOCTYPE html>
-	<html lang="en">
+	<html lang="en" if theme == "light" {
+	data-theme="light"
+}>
 		<head>
 			<meta charset="UTF-8"/>
 			<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 			<script src="/static/js/htmx.min.js"></script>
+			<script src="https://unpkg.com/hyperscript.org@0.9.12"></script>
 			<link rel="stylesheet" href="/static/css/output.css"/>
 			<title>{ title }</title>
 		</head>

@@ -29,7 +29,7 @@ func Header() templ.Component {
 			templ_7745c5c3_Var1 = templ.NopComponent
 		}
 		ctx = templ.ClearChildren(ctx)
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 1, "<header><h1 class=\"text-4xl font-bold\">Khoa Huynh</h1><ul class=\"flex items-center mt-3\"><li class=\"shrink-0\"><a href=\"https://github.com/khoaHyh\" class=\"block hover:text-cottonCandyPink transform transition-transform duration-200 ease-in-out hover:-translate-y-2 hover:text-darkGray\"><span class=\"sr-only\">Github</span> <svg aria-hidden=\"true\" class=\"w-6 h-6\" fill=\"currentColor\" viewBox=\"0 0 24 24\"><path clipRule=\"evenodd\" d=\"M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z\" fillRule=\"evenodd\" xmlns=\"http://www.w3.org/2000/svg\"></path></svg></a></li><li class=\"ml-2 shrink-0\"><a href=\"https://www.linkedin.com/in/khoa-huynh-717ba41bb/\" class=\"block hover:text-cottonCandyPink transform transition-transform duration-200 ease-in-out hover:-translate-y-2 hover:text-darkGray\"><span class=\"sr-only\">LinkedIn</span> <svg class=\"w-6 h-6\" fill=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path clipRule=\"evenodd\" d=\"M19 0h-14c-2.8 0-5 2.2-5 5v14c0 2.8 2.2 5 5 5h14c2.8 0 5-2.2 5-5v-14c0-2.8-2.2-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.3c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.8 1.8-1.8 1.8zm13.5 12.3h-3v-5.6c0-1.3 0-3-1.8-3s-2.2 1.4-2.2 2.9v5.7h-3v-11h2.9v1.5h.1c.4-.7 1.4-1.5 2.9-1.5 3.1 0 3.7 2 3.7 4.7v6.3z\" fillRule=\"evenodd\"></path></svg></a></li></ul></header>")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 1, "<header class=\"mb-8\"><!-- Terminal-style header with blinking cursor --><div class=\"bg-darkGray/20 border border-darkGray rounded-lg p-4 font-mono\"><div class=\"flex items-center justify-end\"><!-- Theme toggle --></div><!-- Command line interface --><div class=\"space-y-1\"><div class=\"flex items-center gap-2 justify-between\"><div><span class=\"text-cottonCandyPink\">$</span> <span class=\"text-secondaryText\">whoami</span></div><button id=\"theme-toggle\" class=\"p-2 text-secondaryText hover:text-cottonCandyPink transition-colors rounded\" aria-label=\"Toggle theme\" hx-post=\"/toggle-theme\" hx-target=\"#theme-toggle\" hx-swap=\"outerHTML\" hx-trigger=\"click\" _=\"on click remove [@data-theme] from &lt;html/&gt;\"><svg class=\"w-6 h-6\" fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58c-.39-.39-1.03-.39-1.41 0-.39.39-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37c-.39-.39-1.03-.39-1.41 0-.39.39-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0 .39-.39.39-1.03 0-1.41l-1.06-1.06zm1.06-10.96c.39-.39.39-1.03 0-1.41-.39-.39-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06zM7.05 18.36c.39-.39.39-1.03 0-1.41-.39-.39-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06z\"></path></svg></button></div><div class=\"pl-3\"><h1 class=\"text-4xl font-bold text-text\">Khoa Huynh</h1><p class=\"text-sm text-text\">Full Stack Developer</p></div><div class=\"flex items-center gap-2 mt-3\"><span class=\"text-cottonCandyPink\">$</span> <span class=\"text-secondaryText\">ls -la ./navigation</span></div><div class=\"pl-3 flex flex-wrap gap-2 sm:gap-4 text-sm\"><a href=\"#journey\" class=\"hover:text-cottonCandyPink transition-colors flex items-center gap-1\"><span class=\"text-secondaryText\">📂</span> <span class=\"hidden sm:inline\">journey/</span> <span class=\"sm:hidden\">journey</span></a> <a href=\"#projects\" class=\"hover:text-cottonCandyPink transition-colors flex items-center gap-1\"><span class=\"text-secondaryText\">🛠️</span> <span class=\"hidden sm:inline\">projects/</span> <span class=\"sm:hidden\">projects</span></a></div><div class=\"flex items-center gap-2 mt-3\"><span class=\"text-cottonCandyPink\">$</span> <span class=\"text-secondaryText\">find ./social -type l</span></div><div class=\"pl-3 flex flex-wrap gap-2 sm:gap-4\"><a href=\"https://github.com/khoaHyh\" class=\"flex items-center gap-1 sm:gap-2 text-sm hover:text-cottonCandyPink transition-colors group\" target=\"_blank\" rel=\"noopener noreferrer\"><svg class=\"w-4 h-4 sm:w-5 sm:h-5 group-hover:scale-110 transition-transform\" fill=\"currentColor\" viewBox=\"0 0 24 24\"><path clipRule=\"evenodd\" d=\"M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z\" fillRule=\"evenodd\"></path></svg> <span>github</span></a> <a href=\"https://www.linkedin.com/in/khoa-huynh-717ba41bb/\" class=\"flex items-center gap-1 sm:gap-2 text-sm hover:text-cottonCandyPink transition-colors group\" target=\"_blank\" rel=\"noopener noreferrer\"><svg class=\"w-4 h-4 sm:w-5 sm:h-5 group-hover:scale-110 transition-transform\" fill=\"currentColor\" viewBox=\"0 0 24 24\"><path clipRule=\"evenodd\" d=\"M19 0h-14c-2.8 0-5 2.2-5 5v14c0 2.8 2.2 5 5 5h14c2.8 0 5-2.2 5-5v-14c0-2.8-2.2-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.3c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.8 1.8-1.8 1.8zm13.5 12.3h-3v-5.6c0-1.3 0-3-1.8-3s-2.2 1.4-2.2 2.9v5.7h-3v-11h2.9v1.5h.1c.4-.7 1.4-1.5 2.9-1.5 3.1 0 3.7 2 3.7 4.7v6.3z\" fillRule=\"evenodd\"></path></svg> <span>linkedin</span></a></div></div></div></header>")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
@@ -66,7 +66,14 @@ func Footer() templ.Component {
 	})
 }
 
-func Timeline() templ.Component {
+type OpenSourceContribution struct {
+	Title           string
+	Description     string
+	PullRequestLink templ.SafeURL
+	Tags            []string
+}
+
+func OpenSourceCard(contribution OpenSourceContribution) templ.Component {
 	return templruntime.GeneratedTemplate(func(templ_7745c5c3_Input templruntime.GeneratedComponentInput) (templ_7745c5c3_Err error) {
 		templ_7745c5c3_W, ctx := templ_7745c5c3_Input.Writer, templ_7745c5c3_Input.Context
 		if templ_7745c5c3_CtxErr := ctx.Err(); templ_7745c5c3_CtxErr != nil {
@@ -87,7 +94,65 @@ func Timeline() templ.Component {
 			templ_7745c5c3_Var3 = templ.NopComponent
 		}
 		ctx = templ.ClearChildren(ctx)
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 3, "<ol class=\"relative space-y-8 before:absolute before:top-0 before:left-1/2 before:h-full before:w-0.5 before:-translate-x-1/2 before:rounded-full before:bg-gray-200\"><li class=\"group relative grid grid-cols-2 odd:-me-3 even:-ms-3\"><div class=\"relative flex items-start gap-4 group-odd:flex-row-reverse group-odd:text-right group-even:order-last\"><span class=\"size-3 shrink-0 rounded-full bg-cottonCandyPink\"></span><div class=\"-mt-2\"><time class=\"text-xs/none font-medium\">2015-2019</time><h2 class=\"text-xl font-bold\">Wheels up</h2><p class=\"mt-0.5 text-sm\">Worked as a Pedicab Driver (basically a bike taxi) biking people from all different walks of life around Toronto.</p></div></div><div aria-hidden=\"true\"></div></li><li class=\"group relative grid grid-cols-2 odd:-me-3 even:-ms-3\"><div class=\"relative flex items-start gap-4 group-odd:flex-row-reverse group-odd:text-right group-even:order-last\"><span class=\"size-3 shrink-0 rounded-full bg-cottonCandyPink\"></span><div class=\"-mt-2\"><time class=\"text-xs/none font-medium\">November 2019</time><h2 class=\"text-xl font-bold\">From Zero to 'Hello World'</h2><p class=\"mt-0.5 text-sm\">I wanted to start my own Pedicab company and thought I should make a website for it. I didn't have the money to shell out for someone else to build it and I wanted to learn a new skill so I decided to learn how to build a website. I bought Andrei Neagoie's <a href=\"https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/\" class=\"text-secondaryText hover:text-cottonCandyPink\">Complete Web Developer course</a> on Black Friday to try and learn how to program.</p></div></div><div aria-hidden=\"true\"></div></li><li class=\"group relative grid grid-cols-2 odd:-me-3 even:-ms-3\"><div class=\"relative flex items-start gap-4 group-odd:flex-row-reverse group-odd:text-right group-even:order-last\"><span class=\"size-3 shrink-0 rounded-full bg-cottonCandyPink\"></span><div class=\"-mt-2\"><time class=\"text-xs/none font-medium \">March 2020</time><h2 class=\"text-xl font-bold\">Lockdown</h2><p class=\"mt-0.5 text-sm \">The COVID-19 pandemic happened and we know the rest. For me, I slacked off and played more Call of Duty Warzone than I'd like to admit.</p></div></div><div aria-hidden=\"true\"></div></li><li class=\"group relative grid grid-cols-2 odd:-me-3 even:-ms-3\"><div class=\"relative flex items-start gap-4 group-odd:flex-row-reverse group-odd:text-right group-even:order-last\"><span class=\"size-3 shrink-0 rounded-full bg-cottonCandyPink\"></span><div class=\"-mt-2\"><time class=\"text-xs/none font-medium \">July 2020</time><h2 class=\"text-xl font-bold\">Resume work, pause game</h2><p class=\"mt-0.5 text-sm \">I got a big surge of motivation and got back to learning. It was at this time I started falling in love with programming and wanting to pursue it full-time.  I finished the \"Complete Web Developer\" course, did <a href=\"https://www.edx.org/learn/computer-science/harvard-university-cs50-s-introduction-to-computer-science\" class=\"text-secondaryText hover:text-cottonCandyPink\">CS50</a> and built a <a href=\"https://github.com/khoaHyh/EOHE\" class=\"text-secondaryText hover:text-cottonCandyPink\">video game</a> as my \"capstone\", got through some modules of <a href=\"https://www.freecodecamp.org/\" class=\"text-secondaryText hover:text-cottonCandyPink\">FreeCodeCamp</a>,  struggled through <a href=\"https://www.coursera.org/learn/algorithms-part1\" class=\"text-secondaryText hover:text-cottonCandyPink\">Princeton Algorithms 1</a>, and built some more projects to apply everything I've learnt thus far. I also then started interview prep and started applying to some jobs. I'll elaborate more in a blog post some day. Probably.</p></div></div><div aria-hidden=\"true\"></div></li><li class=\"group relative grid grid-cols-2 odd:-me-3 even:-ms-3\"><div class=\"relative flex items-start gap-4 group-odd:flex-row-reverse group-odd:text-right group-even:order-last\"><span class=\"size-3 shrink-0 rounded-full bg-cottonCandyPink\"></span><div class=\"-mt-2\"><time class=\"text-xs/none font-medium \">May 2021</time><h2 class=\"text-xl font-bold\">First job!</h2><h3 class=\"text-lg font-bold\">TouchBistro</h3><h4 class=\"text-md italic\">Full Stack Software Developer</h4><p class=\"mt-0.5 text-sm\">Got an offer to start working full-time as a Full Stack Software Developer at TouchBistro on the Menu Management team. My day-to-day off the rip was developing and shipping features for our new cloud-first Menu Management product that syncs with the in-venue POS. Most of the tech stack I worked with was Next.js, Node.js, Express.js, PostgreSQL, Docker and some other not so common in my day-to-day.</p></div></div><div aria-hidden=\"true\"></div></li><li class=\"group relative grid grid-cols-2 odd:-me-3 even:-ms-3\"><div class=\"relative flex items-start gap-4 group-odd:flex-row-reverse group-odd:text-right group-even:order-last\"><span class=\"size-3 shrink-0 rounded-full bg-cottonCandyPink\"></span><div class=\"-mt-2\"><time class=\"text-xs/none font-medium \">Present</time><h2 class=\"text-xl font-bold\">DevAccel 🚀</h2><h3 class=\"text-lg font-bold\">TouchBistro</h3><h4 class=\"text-md italic\">Full Stack Software Developer</h4><p class=\"mt-0.5 text-sm\">My current work at TB is dedicated to tooling, automation and developer enablement.  I get to be responsible for things like CI/CD, dev tools & environment, best practices, and more. </p></div></div><div aria-hidden=\"true\"></div></li></ol>")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 3, "<div class=\"border border-darkGray rounded-lg p-6 hover:border-cottonCandyPink transition-colors\"><h3 class=\"text-lg font-bold mb-2\"><a href=\"")
+		if templ_7745c5c3_Err != nil {
+			return templ_7745c5c3_Err
+		}
+		var templ_7745c5c3_Var4 templ.SafeURL = contribution.PullRequestLink
+		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString(templ.EscapeString(string(templ_7745c5c3_Var4)))
+		if templ_7745c5c3_Err != nil {
+			return templ_7745c5c3_Err
+		}
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 4, "\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"hover:text-cottonCandyPink transition-colors\">")
+		if templ_7745c5c3_Err != nil {
+			return templ_7745c5c3_Err
+		}
+		var templ_7745c5c3_Var5 string
+		templ_7745c5c3_Var5, templ_7745c5c3_Err = templ.JoinStringErrs(contribution.Title)
+		if templ_7745c5c3_Err != nil {
+			return templ.Error{Err: templ_7745c5c3_Err, FileName: `internal/templates/components/components.templ`, Line: 102, Col: 24}
+		}
+		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString(templ.EscapeString(templ_7745c5c3_Var5))
+		if templ_7745c5c3_Err != nil {
+			return templ_7745c5c3_Err
+		}
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 5, "</a></h3><p class=\"text-secondaryText text-sm mb-4\">")
+		if templ_7745c5c3_Err != nil {
+			return templ_7745c5c3_Err
+		}
+		var templ_7745c5c3_Var6 string
+		templ_7745c5c3_Var6, templ_7745c5c3_Err = templ.JoinStringErrs(contribution.Description)
+		if templ_7745c5c3_Err != nil {
+			return templ.Error{Err: templ_7745c5c3_Err, FileName: `internal/templates/components/components.templ`, Line: 105, Col: 71}
+		}
+		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString(templ.EscapeString(templ_7745c5c3_Var6))
+		if templ_7745c5c3_Err != nil {
+			return templ_7745c5c3_Err
+		}
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 6, "</p><div class=\"flex gap-2 text-xs\">")
+		if templ_7745c5c3_Err != nil {
+			return templ_7745c5c3_Err
+		}
+		for _, tag := range contribution.Tags {
+			templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 7, "<span class=\"px-2 py-1 bg-darkGray rounded\">")
+			if templ_7745c5c3_Err != nil {
+				return templ_7745c5c3_Err
+			}
+			var templ_7745c5c3_Var7 string
+			templ_7745c5c3_Var7, templ_7745c5c3_Err = templ.JoinStringErrs(tag)
+			if templ_7745c5c3_Err != nil {
+				return templ.Error{Err: templ_7745c5c3_Err, FileName: `internal/templates/components/components.templ`, Line: 108, Col: 53}
+			}
+			_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString(templ.EscapeString(templ_7745c5c3_Var7))
+			if templ_7745c5c3_Err != nil {
+				return templ_7745c5c3_Err
+			}
+			templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 8, "</span>")
+			if templ_7745c5c3_Err != nil {
+				return templ_7745c5c3_Err
+			}
+		}
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 9, "</div></div>")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
@@ -95,8 +160,15 @@ func Timeline() templ.Component {
 	})
 }
 
-// TODO: maybe should make the component and loop to add the content
-func ProjectCard() templ.Component {
+type ProjectData struct {
+	Title       string
+	Description string
+	AppLink     templ.SafeURL
+	Tags        []string
+	Image       string
+}
+
+func ProjectCard(project ProjectData) templ.Component {
 	return templruntime.GeneratedTemplate(func(templ_7745c5c3_Input templruntime.GeneratedComponentInput) (templ_7745c5c3_Err error) {
 		templ_7745c5c3_W, ctx := templ_7745c5c3_Input.Writer, templ_7745c5c3_Input.Context
 		if templ_7745c5c3_CtxErr := ctx.Err(); templ_7745c5c3_CtxErr != nil {
@@ -112,20 +184,65 @@ func ProjectCard() templ.Component {
 			}()
 		}
 		ctx = templ.InitializeContext(ctx)
-		templ_7745c5c3_Var4 := templ.GetChildren(ctx)
-		if templ_7745c5c3_Var4 == nil {
-			templ_7745c5c3_Var4 = templ.NopComponent
+		templ_7745c5c3_Var8 := templ.GetChildren(ctx)
+		if templ_7745c5c3_Var8 == nil {
+			templ_7745c5c3_Var8 = templ.NopComponent
 		}
 		ctx = templ.ClearChildren(ctx)
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 4, "<a href=\"https://sonicsight.dev/\" class=\"group relative block h-64 sm:h-80 lg:h-96\" target=\"_blank\" rel=\"noreferrer noopener\" aria-label=\"Sonicsight app page (opens in a new tab)\"><span class=\"absolute inset-0 border-2 border-dashed border-black\"></span><div class=\"relative flex h-full transform items-end border-2 border-black bg-cottonCandyPink transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2\"><div class=\"p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-0 sm:p-6 lg:p-8\"><svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" class=\"size-10 sm:size-12 stroke-background\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z\"></path></svg><h2 class=\"mt-4 text-xl text-background font-medium sm:text-2xl\">SonicSight</h2></div><div class=\"absolute p-4 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100 sm:p-6 lg:p-8\"><h3 class=\"mt-4 text-xl text-background font-medium sm:text-2xl\">SonicSight</h3><p class=\"mt-4 text-sm text-background sm:text-base\">A web application that transforms audio files into spectrograms and uses deep learning to classify sounds.  Currently specialized in distinguishing between cat and dog sounds, it leverages a model I trained on Kaggle,  deployed on Hugging Face with a FastHTML frontend.</p><p class=\"mt-8 text-background font-bold\">Read more</p></div></div></a>")
-		if templ_7745c5c3_Err != nil {
-			return templ_7745c5c3_Err
+		if project.AppLink != "" {
+			templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 10, "<a href=\"")
+			if templ_7745c5c3_Err != nil {
+				return templ_7745c5c3_Err
+			}
+			var templ_7745c5c3_Var9 templ.SafeURL = project.AppLink
+			_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString(templ.EscapeString(string(templ_7745c5c3_Var9)))
+			if templ_7745c5c3_Err != nil {
+				return templ_7745c5c3_Err
+			}
+			templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 11, "\" class=\"group relative block h-64 sm:h-80 lg:h-96\" target=\"_blank\" rel=\"noreferrer noopener\" aria-label=\"")
+			if templ_7745c5c3_Err != nil {
+				return templ_7745c5c3_Err
+			}
+			var templ_7745c5c3_Var10 string
+			templ_7745c5c3_Var10, templ_7745c5c3_Err = templ.JoinStringErrs(project.Title + " app page (opens in a new tab)")
+			if templ_7745c5c3_Err != nil {
+				return templ.Error{Err: templ_7745c5c3_Err, FileName: `internal/templates/components/components.templ`, Line: 129, Col: 64}
+			}
+			_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString(templ.EscapeString(templ_7745c5c3_Var10))
+			if templ_7745c5c3_Err != nil {
+				return templ_7745c5c3_Err
+			}
+			templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 12, "\">")
+			if templ_7745c5c3_Err != nil {
+				return templ_7745c5c3_Err
+			}
+			templ_7745c5c3_Err = projectCardContent(project).Render(ctx, templ_7745c5c3_Buffer)
+			if templ_7745c5c3_Err != nil {
+				return templ_7745c5c3_Err
+			}
+			templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 13, "</a>")
+			if templ_7745c5c3_Err != nil {
+				return templ_7745c5c3_Err
+			}
+		} else {
+			templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 14, "<div class=\"group relative block h-64 sm:h-80 lg:h-96\">")
+			if templ_7745c5c3_Err != nil {
+				return templ_7745c5c3_Err
+			}
+			templ_7745c5c3_Err = projectCardContent(project).Render(ctx, templ_7745c5c3_Buffer)
+			if templ_7745c5c3_Err != nil {
+				return templ_7745c5c3_Err
+			}
+			templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 15, "</div>")
+			if templ_7745c5c3_Err != nil {
+				return templ_7745c5c3_Err
+			}
 		}
 		return nil
 	})
 }
 
-func ProjectCardList() templ.Component {
+func projectCardContent(project ProjectData) templ.Component {
 	return templruntime.GeneratedTemplate(func(templ_7745c5c3_Input templruntime.GeneratedComponentInput) (templ_7745c5c3_Err error) {
 		templ_7745c5c3_W, ctx := templ_7745c5c3_Input.Writer, templ_7745c5c3_Input.Context
 		if templ_7745c5c3_CtxErr := ctx.Err(); templ_7745c5c3_CtxErr != nil {
@@ -141,11 +258,95 @@ func ProjectCardList() templ.Component {
 			}()
 		}
 		ctx = templ.InitializeContext(ctx)
-		templ_7745c5c3_Var5 := templ.GetChildren(ctx)
-		if templ_7745c5c3_Var5 == nil {
-			templ_7745c5c3_Var5 = templ.NopComponent
+		templ_7745c5c3_Var11 := templ.GetChildren(ctx)
+		if templ_7745c5c3_Var11 == nil {
+			templ_7745c5c3_Var11 = templ.NopComponent
 		}
 		ctx = templ.ClearChildren(ctx)
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 16, "<span class=\"absolute inset-0 border-2 border-dashed border-black\"></span><div class=\"relative flex h-full transform items-end border-2 border-black bg-cottonCandyPink transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2\"><div class=\"p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-0 sm:p-6 lg:p-8\">")
+		if templ_7745c5c3_Err != nil {
+			return templ_7745c5c3_Err
+		}
+		if project.Image != "" {
+			templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 17, "<img src=\"")
+			if templ_7745c5c3_Err != nil {
+				return templ_7745c5c3_Err
+			}
+			var templ_7745c5c3_Var12 string
+			templ_7745c5c3_Var12, templ_7745c5c3_Err = templ.JoinStringErrs(project.Image)
+			if templ_7745c5c3_Err != nil {
+				return templ.Error{Err: templ_7745c5c3_Err, FileName: `internal/templates/components/components.templ`, Line: 145, Col: 28}
+			}
+			_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString(templ.EscapeString(templ_7745c5c3_Var12))
+			if templ_7745c5c3_Err != nil {
+				return templ_7745c5c3_Err
+			}
+			templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 18, "\" alt=\"")
+			if templ_7745c5c3_Err != nil {
+				return templ_7745c5c3_Err
+			}
+			var templ_7745c5c3_Var13 string
+			templ_7745c5c3_Var13, templ_7745c5c3_Err = templ.JoinStringErrs(project.Title + " screenshot")
+			if templ_7745c5c3_Err != nil {
+				return templ.Error{Err: templ_7745c5c3_Err, FileName: `internal/templates/components/components.templ`, Line: 145, Col: 66}
+			}
+			_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString(templ.EscapeString(templ_7745c5c3_Var13))
+			if templ_7745c5c3_Err != nil {
+				return templ_7745c5c3_Err
+			}
+			templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 19, "\" class=\"w-full h-32 object-cover rounded mb-4\">")
+			if templ_7745c5c3_Err != nil {
+				return templ_7745c5c3_Err
+			}
+		} else {
+			templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 20, "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" class=\"size-10 sm:size-12 stroke-background\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z\"></path></svg>")
+			if templ_7745c5c3_Err != nil {
+				return templ_7745c5c3_Err
+			}
+		}
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 21, "<h2 class=\"mt-4 text-xl text-background font-medium sm:text-2xl\">")
+		if templ_7745c5c3_Err != nil {
+			return templ_7745c5c3_Err
+		}
+		var templ_7745c5c3_Var14 string
+		templ_7745c5c3_Var14, templ_7745c5c3_Err = templ.JoinStringErrs(project.Title)
+		if templ_7745c5c3_Err != nil {
+			return templ.Error{Err: templ_7745c5c3_Err, FileName: `internal/templates/components/components.templ`, Line: 161, Col: 83}
+		}
+		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString(templ.EscapeString(templ_7745c5c3_Var14))
+		if templ_7745c5c3_Err != nil {
+			return templ_7745c5c3_Err
+		}
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 22, "</h2></div><div class=\"absolute p-4 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100 sm:p-6 lg:p-8\"><h3 class=\"mt-4 text-xl text-background font-medium sm:text-2xl\">")
+		if templ_7745c5c3_Err != nil {
+			return templ_7745c5c3_Err
+		}
+		var templ_7745c5c3_Var15 string
+		templ_7745c5c3_Var15, templ_7745c5c3_Err = templ.JoinStringErrs(project.Title)
+		if templ_7745c5c3_Err != nil {
+			return templ.Error{Err: templ_7745c5c3_Err, FileName: `internal/templates/components/components.templ`, Line: 164, Col: 83}
+		}
+		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString(templ.EscapeString(templ_7745c5c3_Var15))
+		if templ_7745c5c3_Err != nil {
+			return templ_7745c5c3_Err
+		}
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 23, "</h3><p class=\"mt-4 text-sm text-background sm:text-base\">")
+		if templ_7745c5c3_Err != nil {
+			return templ_7745c5c3_Err
+		}
+		var templ_7745c5c3_Var16 string
+		templ_7745c5c3_Var16, templ_7745c5c3_Err = templ.JoinStringErrs(project.Description)
+		if templ_7745c5c3_Err != nil {
+			return templ.Error{Err: templ_7745c5c3_Err, FileName: `internal/templates/components/components.templ`, Line: 166, Col: 25}
+		}
+		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString(templ.EscapeString(templ_7745c5c3_Var16))
+		if templ_7745c5c3_Err != nil {
+			return templ_7745c5c3_Err
+		}
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 24, "</p><!-- <div class=\"mt-4 flex gap-2 text-xs\"> --><!-- \tfor _, tag := range project.Tags { --><!-- \t\t<span class=\"px-2 py-1 bg-background/20 text-background rounded\">{ tag }</span> --><!-- \t} --><!-- </div> --></div></div>")
+		if templ_7745c5c3_Err != nil {
+			return templ_7745c5c3_Err
+		}
 		return nil
 	})
 }

@@ -8,10 +8,31 @@
 }
 
 @theme {
-  --color-background: #292929; /* dark gray */
-  --color-text: #fecea8; /* peach blossom */
-  --color-secondaryText: #99b898; /* soft green */
+  /* Dark theme (default) */
+  --color-background: #1a1a1a;
+  --color-surface: #292929;
+  --color-text: #fecea8; 
+  --color-secondaryText: #a8c998; 
   --color-cottonCandyPink: #ffbcd9;
-  --color-darkGray: #616161;
+  --color-primaryVariant: #ff9ec4;
+  --color-accent: #ffd700;
+  --color-darkGray: #484848;
   --font-mono: "Space Mono";
+}
+
+/* Light theme */
+:root[data-theme="light"] {
+  --color-background: #fefefe;
+  --color-surface: #f5f5f5;
+  --color-text: #2c2c2c;
+  --color-secondaryText: #4a5d4a;
+  --color-cottonCandyPink: #d63384;
+  --color-primaryVariant: #b02a5b;
+  --color-accent: #fd7e14;
+  --color-darkGray: #6c757d;
+}
+
+/* Smooth transitions for theme changes */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }

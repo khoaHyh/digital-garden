@@ -4,7 +4,6 @@ type Project struct {
 	Title       string
 	Description string
 	Link        string
-	// ImageSVG/someOtherFormat    string
 }
 
 var projects = []Project{

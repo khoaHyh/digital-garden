@@ -1,3 +1,5 @@
 .env
 tailwindcss
 tmp/
+llms.md
+CLAUDE.md

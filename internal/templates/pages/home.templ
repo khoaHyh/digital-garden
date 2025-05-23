@@ -3,19 +3,95 @@ package pages
 import "digital-garden/internal/templates/layouts"
 import "digital-garden/internal/templates/components"
 
-templ Home() {
-	@layouts.Base("Khoa Huynh") {
-		<section id="work" class="mt-10">
-			<h1 class="text-2xl font-bold my-2">
-				<span class="bg-darkGray rounded-md p-2 inline-block">&lt;Work/&gt;</span>
-			</h1>
-			@components.Timeline()
+templ Home(theme string) {
+	@layouts.Base("Khoa Huynh", theme) {
+		<section id="intro" class="mb-20">
+			<div class="space-y-6">
+				<div class="space-y-4">
+					<h2 class="text-lg font-bold text-cottonCandyPink">tl;dr</h2>
+					<p class="text-lg leading-relaxed">
+						Full Stack Developer at TouchBistro working on developer tooling and automation. 
+						Former pedicab driver who discovered programming during the pandemic and fell in love with building things.
+					</p>
+				</div>
+			</div>
 		</section>
-		<section id="side-projects" class="mt-10">
-			<h1 class="text-2xl font-bold my-2">
-				<span class="bg-darkGray rounded-md p-2 inline-block">&lt;Hobby Projects/&gt;</span>
-			</h1>
-			@components.ProjectCard()
+		<section id="journey" class="mb-20">
+			<div class="space-y-12">
+				<div>
+					<h2 class="text-2xl font-bold mb-8">The Journey</h2>
+					<div class="space-y-4 text-secondaryText">
+						<p>
+							Started as a pedicab driver in Toronto, biking people around the city and discovering 
+							stories from all walks of life. When I wanted to start my own pedicab company, 
+							I needed a website but couldn't afford to hire someone.
+						</p>
+						<p>
+							Black Friday 2019: bought a web development course on Udemy. Little did I know this 
+							would completely change my career trajectory.
+						</p>
+						<p>
+							The pandemic hit in March 2020. While the world paused, I dove deeper into programming. 
+							Completed CS50, built projects, struggled through algorithms, and fell in love with 
+							the craft of building software.
+						</p>
+						<p>
+							May 2021: landed my first developer role at TouchBistro. Got plopped onto the Menu Management
+							team building a Cloud-first menu that interacts with in-venue POS systems 🥳.
+						</p>
+					</div>
+				</div>
+				<div class="border-l-2 border-cottonCandyPink pl-6">
+					<h3 class="text-lg font-bold mb-2">Currently</h3>
+					<p class="text-secondaryText">
+						At Touchbistro building CI/CD pipelines, developer tools, and automation. 
+						Passionate about developer experience and making complex systems simple.
+					</p>
+				</div>
+			</div>
+		</section>
+		<section id="projects" class="mb-20">
+			<h2 class="text-2xl font-bold mb-8">Hobby Projects 🫶🏻</h2>
+			<div class="grid gap-8">
+				@components.ProjectCard(components.ProjectData{
+					Title:       "SonicSight",
+					Description: "A web application that transforms audio files into spectrograms and uses deep learning to classify sounds. Currently specialized in distinguishing between cat and dog sounds, it leverages a model I trained on Kaggle, deployed on Hugging Face with a FastHTML frontend.",
+					AppLink:     "https://sonicsight.dev/",
+				})
+				@components.ProjectCard(components.ProjectData{
+					Title:       "Twitter clone API",
+					Description: "Developed an API that mocks some of the features that Twitter provides. API Features include: authentication, direct messages, tweets, retweets, likes, and threads.",
+					AppLink:     "",
+				})
+				@components.ProjectCard(components.ProjectData{
+					Title:       "Pomodomo",
+					Description: "A pomodoro web app that helps users work in intervals.",
+					AppLink:     "https://pomodomo-qok9fj4pu-khoahyh.vercel.app/",
+				})
+			</div>
+		</section>
+		<section id="opensource" class="mb-20">
+			<h2 class="text-2xl font-bold mb-8">Open Source Contributions</h2>
+			<div class="grid gap-6">
+				@components.OpenSourceCard(components.OpenSourceContribution{
+					Title:           "Mocha",
+					Description:     "☕️ simple, flexible, fun javascript test framework for node.js & the browser",
+					PullRequestLink: "https://github.com/mochajs/mocha/pulls?q=is%3Apr+author%3AkhoaHyh+",
+					Tags:            []string{"JavaScript", "Testing", "CLI"},
+				})
+				@components.OpenSourceCard(components.OpenSourceContribution{
+					Title:           "FastHTML",
+					Description:     "A new next-generation Python web framework for fast, scalable web applications with minimal, compact code",
+					PullRequestLink: "https://github.com/AnswerDotAI/fasthtml/pulls?q=is%3Apr+author%3AkhoaHyh+",
+					Tags:            []string{"Python", "Web Framework"},
+				})
+				@components.OpenSourceCard(components.OpenSourceContribution{
+					Title:           "LaunchDarkly/ld-find-code-refs",
+					Description:     "Command line program for generating flag code references",
+					PullRequestLink: "https://github.com/launchdarkly/ld-find-code-refs/pulls?q=is%3Apr+is%3Aclosed+author%3AkhoaHyh",
+					Tags:            []string{"Go", "Feature Flags", "CLI"},
+				})
+			</div>
 		</section>
 	}
 }
