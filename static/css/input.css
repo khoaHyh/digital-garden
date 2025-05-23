@@ -11,28 +11,48 @@
   /* Dark theme (default) */
   --color-background: #1a1a1a;
   --color-surface: #292929;
-  --color-text: #fecea8; 
-  --color-secondaryText: #a8c998; 
+  --color-text: #fecea8;
+  --color-secondaryText: #a8c998;
   --color-cottonCandyPink: #ffbcd9;
-  --color-primaryVariant: #ff9ec4;
-  --color-accent: #ffd700;
   --color-darkGray: #484848;
   --font-mono: "Space Mono";
 }
 
-/* Light theme */
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-background: #fefefe;
+    --color-surface: #f5f5f5;
+    --color-text: #2c2c2c;
+    --color-secondaryText: #4a5d4a;
+    --color-cottonCandyPink: #d63384;
+    --color-darkGray: #6c757d;
+    --font-mono: "Space Mono";
+  }
+}
+
 :root[data-theme="light"] {
   --color-background: #fefefe;
   --color-surface: #f5f5f5;
   --color-text: #2c2c2c;
   --color-secondaryText: #4a5d4a;
   --color-cottonCandyPink: #d63384;
-  --color-primaryVariant: #b02a5b;
-  --color-accent: #fd7e14;
   --color-darkGray: #6c757d;
+  --font-mono: "Space Mono";
 }
 
-/* Smooth transitions for theme changes */
+:root[data-theme="dark"] {
+  --color-background: #1a1a1a;
+  --color-surface: #292929;
+  --color-text: #fecea8;
+  --color-secondaryText: #a8c998;
+  --color-cottonCandyPink: #ffbcd9;
+  --color-primaryVariant: #ff9ec4;
+  --font-mono: "Space Mono";
+}
+
 * {
-  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
 }

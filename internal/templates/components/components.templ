@@ -128,7 +128,7 @@ templ ProjectCard(project ProjectData) {
 }
 
 templ projectCardContent(project ProjectData) {
-	<span class="absolute inset-0 border-2 border-dashed border-black"></span>
+	<span class="absolute inset-0 border-2 border-dashed border-text dark:border-black"></span>
 	<div class="relative flex h-full transform items-end border-2 border-black bg-cottonCandyPink transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2">
 		<div class="p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-0 sm:p-6 lg:p-8">
 			if project.Image != "" {
@@ -155,11 +155,6 @@ templ projectCardContent(project ProjectData) {
 			<p class="mt-4 text-sm text-background sm:text-base">
 				{ project.Description }
 			</p>
-			<!-- <div class="mt-4 flex gap-2 text-xs"> -->
-			<!-- 	for _, tag := range project.Tags { -->
-			<!-- 		<span class="px-2 py-1 bg-background/20 text-background rounded">{ tag }</span> -->
-			<!-- 	} -->
-			<!-- </div> -->
 		</div>
 	</div>
 }

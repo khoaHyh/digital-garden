@@ -263,7 +263,7 @@ func projectCardContent(project ProjectData) templ.Component {
 			templ_7745c5c3_Var11 = templ.NopComponent
 		}
 		ctx = templ.ClearChildren(ctx)
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 16, "<span class=\"absolute inset-0 border-2 border-dashed border-black\"></span><div class=\"relative flex h-full transform items-end border-2 border-black bg-cottonCandyPink transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2\"><div class=\"p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-0 sm:p-6 lg:p-8\">")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 16, "<span class=\"absolute inset-0 border-2 border-dashed border-text dark:border-black\"></span><div class=\"relative flex h-full transform items-end border-2 border-black bg-cottonCandyPink transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2\"><div class=\"p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-0 sm:p-6 lg:p-8\">")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
@@ -343,7 +343,7 @@ func projectCardContent(project ProjectData) templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 24, "</p><!-- <div class=\"mt-4 flex gap-2 text-xs\"> --><!-- \tfor _, tag := range project.Tags { --><!-- \t\t<span class=\"px-2 py-1 bg-background/20 text-background rounded\">{ tag }</span> --><!-- \t} --><!-- </div> --></div></div>")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 24, "</p></div></div>")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
