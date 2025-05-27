@@ -18,10 +18,13 @@ func main() {
 
 	mux.HandleFunc("/", handlers.Home)
 
-	// TODO: make env var
-	port := ":3000"
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = "3001" // Default for local development
+	}
+	port = ":" + port
 
-	logger.Printf("View your site at http://localhost%s", port)
+	logger.Printf("Server starting on port %s", port)
 
 	err := http.ListenAndServe(port, mux)
 	if err != nil {

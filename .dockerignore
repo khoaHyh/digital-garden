@@ -1,0 +1,21 @@
+# Git and development files
+.git
+.gitignore
+.DS_Store
+.env*
+tailwindcss
+
+tmp/
+*.log
+node_modules/
+
+README.md
+*.md
+!CLAUDE.md
+
+Makefile
+air.toml
+
+Dockerfile*
+
+!static/
