@@ -52,6 +52,7 @@ func Home() templ.Component {
 				Title:       "SonicSight",
 				Description: "A web application that transforms audio files into spectrograms and uses deep learning to classify sounds. Currently specialized in distinguishing between cat and dog sounds, it leverages a model I trained on Kaggle, deployed on Hugging Face with a FastHTML frontend.",
 				AppLink:     "https://sonicsight.dev/",
+				GithubLink:  "https://github.com/khoaHyh/sonicsight",
 			}).Render(ctx, templ_7745c5c3_Buffer)
 			if templ_7745c5c3_Err != nil {
 				return templ_7745c5c3_Err
@@ -60,6 +61,7 @@ func Home() templ.Component {
 				Title:       "Twitter clone API",
 				Description: "Developed an API that mocks some of the features that Twitter provides. API Features include: authentication, direct messages, tweets, retweets, likes, and threads.",
 				AppLink:     "",
+				GithubLink:  "https://github.com/khoaHyh/twitter-clone-api",
 			}).Render(ctx, templ_7745c5c3_Buffer)
 			if templ_7745c5c3_Err != nil {
 				return templ_7745c5c3_Err
@@ -68,6 +70,7 @@ func Home() templ.Component {
 				Title:       "Pomodomo",
 				Description: "A pomodoro web app that helps users work in intervals.",
 				AppLink:     "https://pomodomo-qok9fj4pu-khoahyh.vercel.app/",
+				GithubLink:  "https://github.com/khoaHyh/pomodomo",
 			}).Render(ctx, templ_7745c5c3_Buffer)
 			if templ_7745c5c3_Err != nil {
 				return templ_7745c5c3_Err
