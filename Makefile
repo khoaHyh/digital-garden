@@ -15,9 +15,8 @@ live/server:
 		--log.time "false" \
 		--misc.clean_on_exit "true"
 
-# TODO: minify in prod
 live/tailwind:
-	./tailwindcss -i ./static/css/input.css -o ./static/css/output.css --watch
+	./tailwindcss -i ./static/css/input.css -o ./static/css/output.css --watch --minify
 
 live: 
 	make -j3 live/templ live/server live/tailwind
