@@ -142,7 +142,7 @@ templ ProjectCard(project ProjectData) {
 				<div class="flex justify-start mt-4 gap-4">
 					<a
 						href={ project.GithubLink }
-						class="inline-flex items-center gap-2 text-sm text-background hover:text-secondaryText transition-colors"
+						class="flex items-center gap-2 text-sm text-background hover:text-secondaryText transition-colors"
 						target="_blank"
 						rel="noopener noreferrer"
 					>
@@ -154,7 +154,7 @@ templ ProjectCard(project ProjectData) {
 					if project.AppLink != "" {
 						<a
 							href={ project.AppLink }
-							class="inline-flex items-center gap-2 text-sm text-background hover:text-secondaryText transition-colors"
+							class="flex items-center gap-2 text-sm text-background hover:text-secondaryText transition-colors"
 							target="_blank"
 							rel="noreferrer noopener"
 							aria-label={ project.Title + " app page (opens in a new tab)" }
