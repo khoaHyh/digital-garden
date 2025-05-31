@@ -29,7 +29,7 @@ func Header() templ.Component {
 			templ_7745c5c3_Var1 = templ.NopComponent
 		}
 		ctx = templ.ClearChildren(ctx)
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 1, "<header class=\"mb-8\"><div class=\"bg-darkGray/20 border border-darkGray rounded-lg p-4 font-mono\"><div><div class=\"flex items-center justify-between\"><div><span class=\"text-cottonCandyPink\">$</span> <span class=\"text-secondaryText\">whoami</span></div><button id=\"theme-toggle\" class=\"text-secondaryText hover:text-cottonCandyPink transition-colors rounded\" aria-label=\"Toggle theme\"><svg class=\"w-6 h-6\" fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58c-.39-.39-1.03-.39-1.41 0-.39.39-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37c-.39-.39-1.03-.39-1.41 0-.39.39-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0 .39-.39.39-1.03 0-1.41l-1.06-1.06zm1.06-10.96c.39-.39.39-1.03 0-1.41-.39-.39-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06zM7.05 18.36c.39-.39.39-1.03 0-1.41-.39-.39-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06z\"></path></svg></button></div><div class=\"pl-3\"><h1 class=\"text-4xl font-bold text-text\">Khoa Huynh</h1><p class=\"text-sm text-text\">Full Stack Developer</p></div><div class=\"flex items-center gap-2 mt-3\"><span class=\"text-cottonCandyPink\">$</span> <span class=\"text-secondaryText\">ls -la ./navigation</span></div><div class=\"pl-3 flex flex-wrap gap-2 sm:gap-4 text-sm\"><a href=\"#journey\" class=\"hover:text-cottonCandyPink transition-colors flex items-center gap-1\"><span class=\"text-secondaryText\">📂</span> <span class=\"hidden sm:inline\">journey/</span> <span class=\"sm:hidden\">journey</span></a> <a href=\"#projects\" class=\"hover:text-cottonCandyPink transition-colors flex items-center gap-1\"><span class=\"text-secondaryText\">🛠️</span> <span class=\"hidden sm:inline\">projects/</span> <span class=\"sm:hidden\">projects</span></a></div><div class=\"flex items-center gap-2 mt-3\"><span class=\"text-cottonCandyPink\">$</span> <span class=\"text-secondaryText\">find ./social -type l</span></div><div class=\"pl-3 flex flex-wrap gap-2 sm:gap-4\"><a href=\"https://github.com/khoaHyh\" class=\"flex items-center gap-1 sm:gap-2 text-sm hover:text-cottonCandyPink transition-colors group\" target=\"_blank\" rel=\"noopener noreferrer\"><svg class=\"w-4 h-4 sm:w-5 sm:h-5 group-hover:scale-110 transition-transform\" fill=\"currentColor\" viewBox=\"0 0 24 24\"><path clipRule=\"evenodd\" d=\"M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z\" fillRule=\"evenodd\"></path></svg> <span>github</span></a> <a href=\"https://www.linkedin.com/in/khoa-huynh-717ba41bb/\" class=\"flex items-center gap-1 sm:gap-2 text-sm hover:text-cottonCandyPink transition-colors group\" target=\"_blank\" rel=\"noopener noreferrer\"><svg class=\"w-4 h-4 sm:w-5 sm:h-5 group-hover:scale-110 transition-transform\" fill=\"currentColor\" viewBox=\"0 0 24 24\"><path clipRule=\"evenodd\" d=\"M19 0h-14c-2.8 0-5 2.2-5 5v14c0 2.8 2.2 5 5 5h14c2.8 0 5-2.2 5-5v-14c0-2.8-2.2-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.3c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.8 1.8-1.8 1.8zm13.5 12.3h-3v-5.6c0-1.3 0-3-1.8-3s-2.2 1.4-2.2 2.9v5.7h-3v-11h2.9v1.5h.1c.4-.7 1.4-1.5 2.9-1.5 3.1 0 3.7 2 3.7 4.7v6.3z\" fillRule=\"evenodd\"></path></svg> <span>linkedin</span></a></div></div></div></header>")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 1, "<header class=\"mb-8\"><div class=\"bg-darkGray/20 border border-darkGray rounded-lg p-4 font-mono\"><div><div class=\"flex items-center justify-between\"><div><span class=\"text-cottonCandyPink\">$</span> <span class=\"text-secondaryText\">whoami</span></div><button id=\"theme-toggle\" class=\"text-secondaryText hover:text-cottonCandyPink transition-colors rounded\" aria-label=\"Toggle theme\"><svg class=\"w-6 h-6\" fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58c-.39-.39-1.03-.39-1.41 0-.39.39-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37c-.39-.39-1.03-.39-1.41 0-.39.39-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0 .39-.39.39-1.03 0-1.41l-1.06-1.06zm1.06-10.96c.39-.39.39-1.03 0-1.41-.39-.39-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06zM7.05 18.36c.39-.39.39-1.03 0-1.41-.39-.39-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06z\"></path></svg></button></div><div class=\"pl-3\"><h1 class=\"text-4xl font-bold text-text\">Khoa Huynh</h1><p class=\"text-sm text-text\">Full Stack Developer</p></div><div class=\"flex items-center gap-2 mt-3\"><span class=\"text-cottonCandyPink\">$</span> <span class=\"text-secondaryText\">ls -la ./navigation</span></div><div class=\"pl-3 flex flex-wrap gap-2 sm:gap-4 text-sm font-bold\"><a href=\"#journey\" class=\"hover:text-cottonCandyPink transition-colors flex items-center gap-1\"><span class=\"text-secondaryText\">📂</span> <span class=\"hidden sm:inline\">journey/</span> <span class=\"sm:hidden\">journey</span></a> <a href=\"#projects\" class=\"hover:text-cottonCandyPink transition-colors flex items-center gap-1\"><span class=\"text-secondaryText\">🛠️</span> <span class=\"hidden sm:inline\">projects/</span> <span class=\"sm:hidden\">projects</span></a> <a href=\"#open-source\" class=\"hover:text-cottonCandyPink transition-colors flex items-center gap-1\"><span class=\"text-secondaryText\">⚙️</span> <span class=\"hidden sm:inline\">open-source/</span> <span class=\"sm:hidden\">open source</span></a> <a href=\"#current-interests\" class=\"hover:text-cottonCandyPink transition-colors flex items-center gap-1\"><span class=\"text-secondaryText\">🎨</span> <span class=\"hidden sm:inline\">current-interests/</span> <span class=\"sm:hidden\">current interests</span></a></div><div class=\"flex items-center gap-2 mt-3\"><span class=\"text-cottonCandyPink\">$</span> <span class=\"text-secondaryText\">find ./social -type l</span></div><div class=\"pl-3 flex flex-wrap gap-2 sm:gap-4\"><a href=\"https://github.com/khoaHyh\" class=\"flex items-center gap-1 sm:gap-2 text-sm hover:text-cottonCandyPink transition-colors group\" target=\"_blank\" rel=\"noopener noreferrer\"><svg class=\"w-4 h-4 sm:w-5 sm:h-5 group-hover:scale-110 transition-transform\" fill=\"currentColor\" viewBox=\"0 0 24 24\"><path clipRule=\"evenodd\" d=\"M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z\" fillRule=\"evenodd\"></path></svg> <span>github</span></a> <a href=\"https://www.linkedin.com/in/khoa-huynh-717ba41bb/\" class=\"flex items-center gap-1 sm:gap-2 text-sm hover:text-cottonCandyPink transition-colors group\" target=\"_blank\" rel=\"noopener noreferrer\"><svg class=\"w-4 h-4 sm:w-5 sm:h-5 group-hover:scale-110 transition-transform\" fill=\"currentColor\" viewBox=\"0 0 24 24\"><path clipRule=\"evenodd\" d=\"M19 0h-14c-2.8 0-5 2.2-5 5v14c0 2.8 2.2 5 5 5h14c2.8 0 5-2.2 5-5v-14c0-2.8-2.2-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.3c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.8 1.8-1.8 1.8zm13.5 12.3h-3v-5.6c0-1.3 0-3-1.8-3s-2.2 1.4-2.2 2.9v5.7h-3v-11h2.9v1.5h.1c.4-.7 1.4-1.5 2.9-1.5 3.1 0 3.7 2 3.7 4.7v6.3z\" fillRule=\"evenodd\"></path></svg> <span>linkedin</span></a></div></div></div></header>")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
@@ -110,7 +110,7 @@ func OpenSourceCard(contribution OpenSourceContribution) templ.Component {
 		var templ_7745c5c3_Var5 string
 		templ_7745c5c3_Var5, templ_7745c5c3_Err = templ.JoinStringErrs(contribution.Title)
 		if templ_7745c5c3_Err != nil {
-			return templ.Error{Err: templ_7745c5c3_Err, FileName: `internal/templates/components/components.templ`, Line: 92, Col: 24}
+			return templ.Error{Err: templ_7745c5c3_Err, FileName: `internal/templates/components/components.templ`, Line: 102, Col: 24}
 		}
 		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString(templ.EscapeString(templ_7745c5c3_Var5))
 		if templ_7745c5c3_Err != nil {
@@ -123,7 +123,7 @@ func OpenSourceCard(contribution OpenSourceContribution) templ.Component {
 		var templ_7745c5c3_Var6 string
 		templ_7745c5c3_Var6, templ_7745c5c3_Err = templ.JoinStringErrs(contribution.Description)
 		if templ_7745c5c3_Err != nil {
-			return templ.Error{Err: templ_7745c5c3_Err, FileName: `internal/templates/components/components.templ`, Line: 94, Col: 72}
+			return templ.Error{Err: templ_7745c5c3_Err, FileName: `internal/templates/components/components.templ`, Line: 104, Col: 72}
 		}
 		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString(templ.EscapeString(templ_7745c5c3_Var6))
 		if templ_7745c5c3_Err != nil {
@@ -141,7 +141,7 @@ func OpenSourceCard(contribution OpenSourceContribution) templ.Component {
 			var templ_7745c5c3_Var7 string
 			templ_7745c5c3_Var7, templ_7745c5c3_Err = templ.JoinStringErrs(tag)
 			if templ_7745c5c3_Err != nil {
-				return templ.Error{Err: templ_7745c5c3_Err, FileName: `internal/templates/components/components.templ`, Line: 97, Col: 54}
+				return templ.Error{Err: templ_7745c5c3_Err, FileName: `internal/templates/components/components.templ`, Line: 107, Col: 54}
 			}
 			_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString(templ.EscapeString(templ_7745c5c3_Var7))
 			if templ_7745c5c3_Err != nil {
@@ -202,7 +202,7 @@ func ProjectCard(project ProjectData) templ.Component {
 			var templ_7745c5c3_Var9 string
 			templ_7745c5c3_Var9, templ_7745c5c3_Err = templ.JoinStringErrs(project.Image)
 			if templ_7745c5c3_Err != nil {
-				return templ.Error{Err: templ_7745c5c3_Err, FileName: `internal/templates/components/components.templ`, Line: 119, Col: 29}
+				return templ.Error{Err: templ_7745c5c3_Err, FileName: `internal/templates/components/components.templ`, Line: 129, Col: 29}
 			}
 			_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString(templ.EscapeString(templ_7745c5c3_Var9))
 			if templ_7745c5c3_Err != nil {
@@ -215,7 +215,7 @@ func ProjectCard(project ProjectData) templ.Component {
 			var templ_7745c5c3_Var10 string
 			templ_7745c5c3_Var10, templ_7745c5c3_Err = templ.JoinStringErrs(project.Title + " screenshot")
 			if templ_7745c5c3_Err != nil {
-				return templ.Error{Err: templ_7745c5c3_Err, FileName: `internal/templates/components/components.templ`, Line: 119, Col: 67}
+				return templ.Error{Err: templ_7745c5c3_Err, FileName: `internal/templates/components/components.templ`, Line: 129, Col: 67}
 			}
 			_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString(templ.EscapeString(templ_7745c5c3_Var10))
 			if templ_7745c5c3_Err != nil {
@@ -238,7 +238,7 @@ func ProjectCard(project ProjectData) templ.Component {
 		var templ_7745c5c3_Var11 string
 		templ_7745c5c3_Var11, templ_7745c5c3_Err = templ.JoinStringErrs(project.Title)
 		if templ_7745c5c3_Err != nil {
-			return templ.Error{Err: templ_7745c5c3_Err, FileName: `internal/templates/components/components.templ`, Line: 135, Col: 84}
+			return templ.Error{Err: templ_7745c5c3_Err, FileName: `internal/templates/components/components.templ`, Line: 145, Col: 84}
 		}
 		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString(templ.EscapeString(templ_7745c5c3_Var11))
 		if templ_7745c5c3_Err != nil {
@@ -251,7 +251,7 @@ func ProjectCard(project ProjectData) templ.Component {
 		var templ_7745c5c3_Var12 string
 		templ_7745c5c3_Var12, templ_7745c5c3_Err = templ.JoinStringErrs(project.Title)
 		if templ_7745c5c3_Err != nil {
-			return templ.Error{Err: templ_7745c5c3_Err, FileName: `internal/templates/components/components.templ`, Line: 138, Col: 84}
+			return templ.Error{Err: templ_7745c5c3_Err, FileName: `internal/templates/components/components.templ`, Line: 148, Col: 84}
 		}
 		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString(templ.EscapeString(templ_7745c5c3_Var12))
 		if templ_7745c5c3_Err != nil {
@@ -264,7 +264,7 @@ func ProjectCard(project ProjectData) templ.Component {
 		var templ_7745c5c3_Var13 string
 		templ_7745c5c3_Var13, templ_7745c5c3_Err = templ.JoinStringErrs(project.Description)
 		if templ_7745c5c3_Err != nil {
-			return templ.Error{Err: templ_7745c5c3_Err, FileName: `internal/templates/components/components.templ`, Line: 140, Col: 26}
+			return templ.Error{Err: templ_7745c5c3_Err, FileName: `internal/templates/components/components.templ`, Line: 150, Col: 26}
 		}
 		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString(templ.EscapeString(templ_7745c5c3_Var13))
 		if templ_7745c5c3_Err != nil {
@@ -300,7 +300,7 @@ func ProjectCard(project ProjectData) templ.Component {
 			var templ_7745c5c3_Var16 string
 			templ_7745c5c3_Var16, templ_7745c5c3_Err = templ.JoinStringErrs(project.Title + " app page (opens in a new tab)")
 			if templ_7745c5c3_Err != nil {
-				return templ.Error{Err: templ_7745c5c3_Err, FileName: `internal/templates/components/components.templ`, Line: 160, Col: 68}
+				return templ.Error{Err: templ_7745c5c3_Err, FileName: `internal/templates/components/components.templ`, Line: 170, Col: 68}
 			}
 			_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString(templ.EscapeString(templ_7745c5c3_Var16))
 			if templ_7745c5c3_Err != nil {

@@ -75,7 +75,7 @@ func Home() templ.Component {
 			if templ_7745c5c3_Err != nil {
 				return templ_7745c5c3_Err
 			}
-			templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 2, "</div></section><section id=\"opensource\" class=\"mb-20\"><h2 class=\"text-2xl font-bold mb-8\">Open Source Contributions</h2><div class=\"grid gap-6\">")
+			templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 2, "</div></section><section id=\"open-source\" class=\"mb-20\"><h2 class=\"text-2xl font-bold mb-8\">Open Source Contributions</h2><div class=\"grid gap-6\">")
 			if templ_7745c5c3_Err != nil {
 				return templ_7745c5c3_Err
 			}
@@ -106,7 +106,7 @@ func Home() templ.Component {
 			if templ_7745c5c3_Err != nil {
 				return templ_7745c5c3_Err
 			}
-			templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 3, "</div></section>")
+			templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 3, "</div></section><section id=\"current-interests\" class=\"mb-20\"><h2 class=\"text-2xl font-bold mb-8\">Current Interests</h2><ul class=\"space-y-4 text-secondaryText\"><li><a href=\"https://course.fast.ai/\" class=\"text-cottonCandyPink hover:text-text transition-colors\" target=\"_blank\" rel=\"noopener noreferrer\">Practical Deep Learning for Coders (by fast.ai) course</a> - I'm using this to dip into ML & Deep Learning</li><li><a href=\"https://autodidacts.io/\" class=\"text-cottonCandyPink hover:text-text transition-colors\" target=\"_blank\" rel=\"noopener noreferrer\">The Autodidacts blog</a> - lots of my interests fall into this blog (self-learning, tech, nerd stuff)</li><li><a href=\"https://permacomputing.net/\" class=\"text-cottonCandyPink hover:text-text transition-colors\" target=\"_blank\" rel=\"noopener noreferrer\">Permacomputing</a> - never heard of this concept until recently (April 2025)</li></ul></section>")
 			if templ_7745c5c3_Err != nil {
 				return templ_7745c5c3_Err
 			}
